@@ -17,7 +17,7 @@ namespace Day5
             var result2 = calc.Calc2(Resource.Input);
             Console.WriteLine($"Result2 : {result2}");
             Console.ReadLine();
-        }
+        } 
     }
 
     public class Day5Calc
