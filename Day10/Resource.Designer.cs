@@ -61,7 +61,18 @@ namespace Day10 {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to position=&lt; 20247,  40241&gt; velocity=&lt;-2, -4&gt;
+        ///position=&lt; 10184, -29948&gt; velocity=&lt;-1,  3&gt;
+        ///position=&lt; 50313, -39966&gt; velocity=&lt;-5,  4&gt;
+        ///position=&lt;-19870, -19921&gt; velocity=&lt; 2,  2&gt;
+        ///position=&lt; 10224, -49995&gt; velocity=&lt;-1,  5&gt;
+        ///position=&lt;-19904,  20191&gt; velocity=&lt; 2, -2&gt;
+        ///position=&lt; 50300,  -9887&gt; velocity=&lt;-5,  1&gt;
+        ///position=&lt;-29924, -29942&gt; velocity=&lt; 3,  3&gt;
+        ///position=&lt;-29903, -29939&gt; velocity=&lt; 3,  3&gt;
+        ///position=&lt;-29905,  50273&gt; velocity=&lt; 3, -5&gt;
+        ///position=&lt; 20222, -29944&gt; velocity=&lt;-2,  3&gt;
+        ///position=&lt; 40293, [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Input {
             get {
@@ -70,7 +81,20 @@ namespace Day10 {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to position=&lt; 9,  1&gt; velocity=&lt; 0,  2&gt;
+        ///position=&lt; 7,  0&gt; velocity=&lt;-1,  0&gt;
+        ///position=&lt; 3, -2&gt; velocity=&lt;-1,  1&gt;
+        ///position=&lt; 6, 10&gt; velocity=&lt;-2, -1&gt;
+        ///position=&lt; 2, -4&gt; velocity=&lt; 2,  2&gt;
+        ///position=&lt;-6, 10&gt; velocity=&lt; 2, -2&gt;
+        ///position=&lt; 1,  8&gt; velocity=&lt; 1, -1&gt;
+        ///position=&lt; 1,  7&gt; velocity=&lt; 1,  0&gt;
+        ///position=&lt;-3, 11&gt; velocity=&lt; 1, -2&gt;
+        ///position=&lt; 7,  6&gt; velocity=&lt;-1, -1&gt;
+        ///position=&lt;-2,  3&gt; velocity=&lt; 1,  0&gt;
+        ///position=&lt;-4,  3&gt; velocity=&lt; 2,  0&gt;
+        ///position=&lt;10, -3&gt; velocity=&lt;-1,  1&gt;
+        ///position=&lt; 5, 11&gt; velocity=&lt; 1, [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TestInput {
             get {
