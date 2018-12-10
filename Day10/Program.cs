@@ -86,7 +86,10 @@ namespace Day10
         private void DrawGrid(
             char[][] grid)
         {
-            grid.Select(c => new string(c)).ToList().ForEach(Console.WriteLine);
+            var firstX = Enumerable.Range(0, grid.Length).ToArray().FirstOrDefault(i => grid.Any(c => c[i] == 'X')) - 1;
+            var lastX = Enumerable.Range(0, grid.Length).ToArray().LastOrDefault(i => grid.Any(c => c[i] == 'X')) + 1;
+            
+            grid.SkipWhile(line => line.Contains('X') == false).TakeWhile(line => line.Contains('X')).Select(c => new string(c.Skip(firstX).Take(lastX-firstX).ToArray())).ToList().ForEach(Console.WriteLine);
         }
 
         private char[][] GenerateGrid(
