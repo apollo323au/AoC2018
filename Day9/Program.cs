@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,23 +13,55 @@ namespace Day9
         {
             var game = new Game();
 
+            var stopWatch = new Stopwatch();
+            stopWatch.Start();
             var result1 = game.GetWinningPlayerOfGame(9, 25);
+            stopWatch.Stop();
+            var result1Time = stopWatch.ElapsedMilliseconds;
+            stopWatch.Restart();
+            stopWatch.Start();
             var result2 = game.GetWinningPlayerOfGame(10, 1618);
+            stopWatch.Stop();
+            var result2Time = stopWatch.ElapsedMilliseconds;
+            stopWatch.Restart();
+            stopWatch.Start();
             var result3 = game.GetWinningPlayerOfGame(13, 7999);
+            stopWatch.Stop();
+            var result3Time = stopWatch.ElapsedMilliseconds;
+            stopWatch.Restart();
+            stopWatch.Start();
             var result4 = game.GetWinningPlayerOfGame(17, 1104);
+            stopWatch.Stop();
+            var result4Time = stopWatch.ElapsedMilliseconds;
+            stopWatch.Restart();
+            stopWatch.Start();
             var result5 = game.GetWinningPlayerOfGame(21, 6111);
+            stopWatch.Stop();
+            var result5Time = stopWatch.ElapsedMilliseconds;
+            stopWatch.Restart();
+            stopWatch.Start();
             var result6 = game.GetWinningPlayerOfGame(30, 5807);
+            stopWatch.Stop();
+            var result6Time = stopWatch.ElapsedMilliseconds;
+            stopWatch.Restart();
+            stopWatch.Start();
             var result7 = game.GetWinningPlayerOfGame(464, 71730);
+            stopWatch.Stop();
+            var result7Time = stopWatch.ElapsedMilliseconds;
+            stopWatch.Restart();
+            stopWatch.Start();
             var result8 = game.GetWinningPlayerOfGame(464, 71730 * 100);
+            stopWatch.Stop();
+            var result8Time = stopWatch.ElapsedMilliseconds;
 
-            Console.WriteLine($"Game1: {result1} - Should be: 32");
-            Console.WriteLine($"Game2: {result2} - Should be: 8317");
-            Console.WriteLine($"Game3: {result3} - Should be: 146373");
-            Console.WriteLine($"Game4: {result4} - Should be: 2764");
-            Console.WriteLine($"Game5: {result5} - Should be: 54718");
-            Console.WriteLine($"Game6: {result6} - Should be: 37305");
-            Console.WriteLine($"Game7: {result7}");
-            Console.WriteLine($"Game8: {result8}");
+            Console.WriteLine($"Game1: {result1}, Time taken: {result1Time}ms - Should be: 32");
+            Console.WriteLine($"Game2: {result2}, Time taken: {result2Time}ms - Should be: 8317");
+            Console.WriteLine($"Game3: {result3}, Time taken: {result3Time}ms - Should be: 146373");
+            Console.WriteLine($"Game4: {result4}, Time taken: {result4Time}ms - Should be: 2764");
+            Console.WriteLine($"Game5: {result5}, Time taken: {result5Time}ms - Should be: 54718");
+            Console.WriteLine($"Game6: {result6}, Time taken: {result6Time}ms - Should be: 37305");
+            Console.WriteLine($"Game7: {result7}, Time taken: {result7Time}ms");
+            Console.WriteLine($"Game8: {result8}, Time taken: {result8Time}ms");
 
             Console.ReadLine();
         }
